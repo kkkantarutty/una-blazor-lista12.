@@ -1,0 +1,52 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>🌍 EcoMonitor</PageTitle>
+<div style="display: flex;
+flex-direction: column;
+align-items: center;">
+<h1>🌍 EcoMonitor</h1>
+
+<p>Tranformando pequenas ações em grandes impactos ambientais</p>
+
+<div class=container>
+<div class=card> 
+<h4 style= "font-weight: bold"> Reciclagem de Plástico</h4>
+<p class = "text">Pontos por ação: <strong> 1</strong></p>
+<p role="status" class = "text">Total acumulado: <span class="number";">@currentCount</span></p>
+<button class="btn btn-primary button" @onclick="IncrementCount">Registrar <br> Atividade</button>
+</div>
+<div class=card> 
+<h4 style= "font-weight: bold"> Descarte de Eletrônicos</h4>
+<p class = "text">Pontos por ação: <strong> 5</strong></p>
+<p role="status" class = "text ">Total acumulado: <span class="number" ">@currentCount5</span></p>
+<button class="btn btn-primary button" @onclick="IncrementCount5">Registrar <br> Atividade</button>
+</div>
+<div class=card> 
+<h4 style= "font-weight: bold"> Plantio de Árvores</h4>
+<p class = "text">Pontos por ação: <strong> 10</strong></p>
+<p role="status" class = "text ">Total acumulado: <span class="number" ">@currentCount10</span></p>
+<button class="btn btn-primary button" @onclick="IncrementCount10">Registrar <br> Atividade</button>
+</div>
+</div>
+</div>
+@code {
+    private int currentCount = 0;
+    private int currentCount5 = 0;
+    private int currentCount10 = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void IncrementCount5()
+    {
+        currentCount5 += 5;
+    }
+
+    private void IncrementCount10()
+    {
+        currentCount10 += 10;
+    }
+}
