@@ -2,8 +2,8 @@
 
 ## Identificação
 
-**Nome completo:** Guilherme Augusto Honorato dos Santos  
-**Curso:** Análise e Desenvolvimento de Sistemas  
+**Nome completo:** Arthur Cantarutti Caldeira  
+**Curso:** Ciência da Computação  
 
 ## Heurísticas de Nielsen
 
