@@ -18,7 +18,7 @@ Os cards seguem o mesmo padrão visual e estrutural, com título, pontuação po
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/guilhermeahs/una-blazor-lista12.git
+git clone https://github.com/kkkantarutty/una-blazor-lista12.git
 ```
 
 2. Entre na pasta do projeto:
